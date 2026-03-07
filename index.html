@@ -1,217 +1,419 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "Organization",
- "name": "Mithilakirti Naturals Private Limited",
- "url": "https://mithilakirtinaturals.com",
- "logo": "https://mithilakirtinaturals.com/logo.jpg",
- "description": "Premium supplier of Mithila makhana (fox nuts) from Bihar, India.",
- "address": {
-   "@type": "PostalAddress",
-   "addressLocality": "Darbhanga",
-   "addressRegion": "Bihar",
-   "addressCountry": "India"
- },
- "contactPoint": {
-   "@type": "ContactPoint",
-   "contactType": "sales",
-   "telephone": "+917003186819"
- },
- "sameAs": [
-   "https://www.facebook.com/mithilakirtinaturals",
-   "https://www.instagram.com/mithilakirtinaturals"
- ]
-}
-</script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Mithilakirti Naturals Private Limited",
+      "url": "https://mithilakirtinaturals.com",
+      "logo": "https://mithilakirtinaturals.com/logo.jpg",
+      "description": "Premium supplier of Mithila makhana (fox nuts) from Bihar, India.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Darbhanga",
+        "addressRegion": "Bihar",
+        "addressCountry": "India"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "telephone": "+917003186819"
+      },
+      "sameAs": [
+        "https://www.facebook.com/mithilakirtinaturals",
+        "https://www.instagram.com/mithilakirtinaturals"
+      ]
+    }
+  </script>
 
-<title>Mithilakirti Naturals | Premium Raw Makhana</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<script src="https://cdn.tailwindcss.com"></script>
+  <title>Mithilakirti Naturals | Premium Raw Makhana</title>
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+
+    /* NAVBAR */
+
+    .navbar{
+      position:fixed;
+      top:20px;
+      left:50%;
+      transform:translateX(-50%);
+      width:90%;
+      max-width:1200px;
+      background:#f4efe6;
+      border-radius:12px;
+      padding:18px 30px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      box-shadow:0 8px 20px rgba(0,0,0,0.15);
+      z-index:1000;
+    }
+
+    .logo{
+      width: 250px;
+      height: 60px;
+    }
+
+    .nav-links{
+      display:flex;
+      align-items:center;
+      gap:30px;
+      font-weight:700;
+      letter-spacing:1px;
+    }
+
+    .nav-links a{
+      text-decoration:none;
+      color:#2b2b2b;
+    }
+
+    .basket{
+      background:#E3D8B6;
+      border-radius:20px;
+      padding:5px 12px;
+      font-size:14px;
+      margin-left:5px;
+    }
+
+
+    /* HERO */
+
+    .hero{
+      height:90vh;
+      background:url("img.png") center/cover no-repeat;
+      display:flex;
+      align-items:center;
+      justify-content:flex-start;
+      position:relative;
+      animation:heroZoom 20s ease-in-out infinite alternate;
+      padding-left:8%;
+    }
+
+    @keyframes heroZoom{
+      from{background-size:100%}
+      to{background-size:110%}
+    }
+
+    .hero-overlay{
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background:rgba(0,0,0,0.25);
+    }
+
+    .hero-content{
+      position:relative;
+      z-index:2;
+      color:white;
+      max-width:700px;
+    }
+
+    /* HERO TEXT STYLE */
+
+    .hero h1{
+      font-size:clamp(60px,8vw,110px);
+      font-weight:900;
+      line-height:0.9;
+      letter-spacing:3px;
+      color:#F5F1E8;
+
+      text-shadow:
+              4px 4px 0px #7c2d12,
+              8px 8px 0px rgba(0,0,0,0.45);
+    }
+
+    .hero p{
+      font-size:24px;
+      margin-top:25px;
+      font-weight:600;
+    }
+
+
+    /* ticker */
+    /* TICKER */
+
+    .ticker{
+      background:#2C8B7B;
+      color:white;
+      overflow:hidden;
+      width:100%;
+    }
+
+    .ticker-track{
+      display:flex;
+      gap:80px;
+      white-space:nowrap;
+      animation:tickerScroll 25s linear infinite;
+      font-weight:700;
+      font-size:18px;
+      padding:14px 0;
+    }
+
+    .ticker-item{
+      display:flex;
+      align-items:center;
+      gap:80px;
+    }
+
+    .ticker-dot{
+      font-size:22px;
+      color:#F5F1E8;
+    }
+
+    @keyframes tickerScroll{
+      0%{
+        transform:translateX(0);
+      }
+      100%{
+        transform:translateX(-50%);
+      }
+    }
+
+
+    /* circle */
+
+    .circle{
+      width:260px;
+      height:260px;
+      border-radius:50%;
+      border:6px solid #2C8B7B;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      margin:auto;
+      animation:spin 12s linear infinite;
+    }
+
+    @keyframes spin{
+      from{transform:rotate(0)}
+      to{transform:rotate(360deg)}
+    }
+
+
+    /* convoy */
+
+    .road{
+      background:#2C8B7B;
+      height:140px;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .convoy{
+      display:flex;
+      position:absolute;
+      top:20px;
+      animation:drive 18s linear infinite;
+    }
+
+    .vehicle{
+      width:220px;
+      height:80px;
+      background:#F25C2B;
+      margin-right:120px;
+      border-radius:10px;
+      position:relative;
+    }
+
+    .wheel{
+      width:30px;
+      height:30px;
+      background:#333;
+      border-radius:50%;
+      position:absolute;
+      bottom:-15px;
+    }
+
+    .w1{left:20px}
+    .w2{right:20px}
+
+    @keyframes drive{
+      0%{transform:translateX(-20%)}
+      100%{transform:translateX(120%)}
+    }
+
+  </style>
 
 </head>
 
-<body class="bg-[#F9F5F0] text-gray-800 font-sans">
+<body class="bg-[#F7C21C] text-[#2B2B2B] font-sans overflow-x-hidden">
 
-<!-- HEADER -->
-<header class="bg-white shadow-md sticky top-0 z-50">
-<nav class="container mx-auto px-6 py-4 flex justify-between items-center">
 
-<div class="text-2xl font-bold text-[#2D5A27]">
-Mithilakirti <span class="text-[#8B4513]">Naturals</span>
-</div>
+<header class="navbar">
 
-<ul class="hidden md:flex space-x-8 font-medium">
-<li><a href="#home" class="hover:text-[#2D5A27]">Home</a></li>
-<li><a href="#about" class="hover:text-[#2D5A27]">About</a></li>
-<li><a href="#products" class="hover:text-[#2D5A27]">Products</a></li>
-<li><a href="#benefits" class="hover:text-[#2D5A27]">Benefits</a></li>
-<li><a href="#contact" class="hover:text-[#2D5A27]">Contact</a></li>
-</ul>
+  <div class="logo">
+    <img src="logo-typo.png" alt="Mithilakirti Naturals Logo">
+  </div>
 
-<button class="md:hidden text-2xl text-[#2D5A27]">
-<i class="fas fa-bars"></i>
-</button>
+  <div class="nav-links">
 
-</nav>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Benefits</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+
+<!--    <a href="#">-->
+<!--      BASKET <span class="basket">0</span>-->
+<!--    </a>-->
+
+  </div>
+
 </header>
 
 
-<!-- HERO (Removed background picture) -->
-<section id="home" class="h-[60vh] flex items-center justify-center bg-[#EDE7DD]">
 
-<div class="text-center px-4">
+<section id="home" class="hero">
 
-<h1 class="text-5xl md:text-6xl font-bold text-[#2D5A27] mb-4">
-Nature's Finest Crunch
-</h1>
+  <div class="hero-overlay"></div>
 
-<p class="text-xl text-gray-700 mb-8">
-Premium Quality Raw Makhana from the Heart of Bihar
-</p>
+  <div class="hero-content">
 
-<a href="#products"
-class="bg-[#2D5A27] hover:bg-[#1e3d1a] text-white px-8 py-3 rounded-full font-semibold transition">
-Explore Our Range
-</a>
+    <h1>
+      ALL NATURAL<br>
+      MAKHANA
+    </h1>
 
-</div>
+    <p>Premium Foxnuts From Mithila</p>
+
+  </div>
 
 </section>
 
 
 
-<!-- PRODUCTS -->
-<section id="products" class="py-20 container mx-auto px-6">
+<div class="ticker">
 
-<h2 class="text-3xl font-bold text-center mb-12 text-[#2D5A27]">
-Our Premium Selection
-</h2>
+  <div class="ticker-track">
 
-<div class="grid md:grid-cols-3 gap-10">
+    <div class="ticker-item">
+      <span class="ticker-dot">•</span> PREMIUM MITHILA MAKHANA
+      <span class="ticker-dot">•</span> HIGH PROTEIN SNACK
+      <span class="ticker-dot">•</span> GLUTEN FREE
+      <span class="ticker-dot">•</span> LOW CALORIES
+      <span class="ticker-dot">•</span> EXPORT QUALITY FOXNUTS
+    </div>
+
+    <div class="ticker-item">
+      <span class="ticker-dot">•</span> PREMIUM MITHILA MAKHANA
+      <span class="ticker-dot">•</span> HIGH PROTEIN SNACK
+      <span class="ticker-dot">•</span> GLUTEN FREE
+      <span class="ticker-dot">•</span> LOW CALORIES
+      <span class="ticker-dot">•</span> EXPORT QUALITY FOXNUTS
+    </div>
+
+  </div>
+
+</div>
 
 
-<!-- PRODUCT 1 -->
-<div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition">
 
-<img src="https://images.unsplash.com/photo-1604908176997-125f25cc6b59?auto=format&fit=crop&w=800&q=80"
-class="w-full h-60 object-cover">
+<section style="padding:120px 20px;text-align:center">
 
-<div class="p-6">
-<h3 class="text-xl font-bold mb-2">Jumbo Premium Makhana</h3>
-<p class="text-gray-600 mb-4">
-Large handpicked foxnuts ideal for roasting and premium snacking.
-</p>
-<span class="text-sm font-semibold text-[#2D5A27]">
-Sourced from Mithila Region
+  <h2 style="font-size:40px;margin-bottom:40px">WHY MAKHANA?</h2>
+
+  <div class="circle">
+<span>
+HIGH PROTEIN<br>
+LOW CALORIE<br>
+GLUTEN FREE
 </span>
-</div>
+  </div>
 
-</div>
-
-
-<!-- PRODUCT 2 -->
-<div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition">
-
-<img src="https://images.unsplash.com/photo-1633945274405-51cfd83c1b13?auto=format&fit=crop&w=800&q=80"
-class="w-full h-60 object-cover">
-
-<div class="p-6">
-<h3 class="text-xl font-bold mb-2">Classic Raw Makhana</h3>
-<p class="text-gray-600 mb-4">
-Naturally dried lotus seeds packed with nutrition and purity.
-</p>
-<span class="text-sm font-semibold text-[#2D5A27]">
-100% Natural & Organic
-</span>
-</div>
-
-</div>
-
-
-<!-- PRODUCT 3 -->
-<div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition">
-
-<img src="https://images.unsplash.com/photo-1653388277780-6a5e672ff7e1?auto=format&fit=crop&w=800&q=80"
-class="w-full h-60 object-cover">
-
-<div class="p-6">
-<h3 class="text-xl font-bold mb-2">Export Quality Makhana</h3>
-<p class="text-gray-600 mb-4">
-Carefully processed foxnuts suitable for international markets.
-</p>
-<span class="text-sm font-semibold text-[#2D5A27]">
-Premium Export Grade
-</span>
-</div>
-
-</div>
-
-</div>
 </section>
 
 
 
-<!-- BENEFITS -->
-<section id="benefits" class="py-20 bg-[#2D5A27] text-white">
+<section style="text-align:center;padding-top:80px">
 
-<div class="container mx-auto px-6">
+  <h2 style="font-size:50px;margin-bottom:40px">
+    WE DELIVER QUALITY
+  </h2>
 
-<h2 class="text-3xl font-bold text-center mb-12">
-The Power of Foxnuts
-</h2>
-
-<div class="grid md:grid-cols-4 gap-8 text-center">
-
-<div>
-<i class="fas fa-heartbeat text-4xl mb-4"></i>
-<p>Heart Healthy</p>
-</div>
-
-<div>
-<i class="fas fa-feather-alt text-4xl mb-4"></i>
-<p>Low Calorie</p>
-</div>
-
-<div>
-<i class="fas fa-bolt text-4xl mb-4"></i>
-<p>High Protein</p>
-</div>
-
-<div>
-<i class="fas fa-leaf text-4xl mb-4"></i>
-<p>Gluten Free</p>
-</div>
-
-</div>
-
-</div>
+  <p style="font-size:20px;margin-bottom:60px">
+    From Mithila ponds to global markets
+  </p>
 
 </section>
 
 
-<!-- FOOTER -->
-<footer class="bg-gray-900 text-white py-10 text-center">
 
-<div class="flex justify-center space-x-6 mb-6 text-xl">
+<!--<div class="road">-->
 
-<a href="#"><i class="fab fa-facebook"></i></a>
-<a href="#"><i class="fab fa-instagram"></i></a>
-<a href="#"><i class="fab fa-linkedin"></i></a>
+<!--  <div class="convoy">-->
 
-</div>
+<!--    <div class="vehicle">-->
+<!--      <div class="wheel w1"></div>-->
+<!--      <div class="wheel w2"></div>-->
+<!--    </div>-->
 
-<p>
-© 2026 Mithilakirti Naturals Private Limited. All Rights Reserved.
-</p>
+<!--    <div class="vehicle" style="background:#F2B705">-->
+<!--      <div class="wheel w1"></div>-->
+<!--      <div class="wheel w2"></div>-->
+<!--    </div>-->
 
-</footer>
+<!--    <div class="vehicle" style="background:#2C8B7B">-->
+<!--      <div class="wheel w1"></div>-->
+<!--      <div class="wheel w2"></div>-->
+<!--    </div>-->
+
+<!--  </div>-->
+
+<!--</div>-->
+
+
+
+<section id="products" style="padding:120px 8%">
+
+  <h2 style="font-size:50px;text-align:center;margin-bottom:80px">
+    OUR MAKHANA
+  </h2>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:40px">
+
+    <div style="background:white;padding:40px;border-radius:10px">
+      <h3>5 SUTA</h3>
+      <p>Premium roasting quality foxnuts</p>
+    </div>
+
+    <div style="background:white;padding:40px;border-radius:10px">
+      <h3>6 SUTA</h3>
+      <p>High grade makhana</p>
+    </div>
+
+    <div style="background:white;padding:40px;border-radius:10px">
+      <h3>7 SUTA</h3>
+      <p>Export quality lotus seeds</p>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<section id="contact" style="padding:120px;text-align:center;background:#2C8B7B;color:white">
+
+  <h2 style="font-size:50px;margin-bottom:20px">
+    CONTACT US
+  </h2>
+
+  <p>Mithilakirti Naturals Private Limited</p>
+  <p>Darbhanga, Bihar</p>
+  <p>+91 7003186819</p>
+
+</section>
 
 </body>
 </html>
