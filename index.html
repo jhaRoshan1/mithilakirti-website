@@ -3,801 +3,703 @@
 
 <head>
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Mithilakirti Naturals Private Limited",
-      "url": "https://mithilakirtinaturals.com",
-      "logo": "https://mithilakirtinaturals.com/logo.jpeg",
-      "description": "Premium supplier of Mithila makhana (fox nuts) from Bihar, India.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Darbhanga",
-        "addressRegion": "Bihar",
-        "addressCountry": "India"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "sales",
-        "telephone": "+917003186819"
-      },
-      "sameAs": [
-        "https://www.facebook.com/share/1Gaz8AYXUx/?mibextid=wwXIfr",
-        "https://www.instagram.com/mithilakirti/",
-        "https://www.linkedin.com/company/mithilakirti-naturals-private-limited/"
-      ]
-    }
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Mithilakirti Naturals Private Limited",
+    "url": "https://mithilakirtinaturals.com",
+    "logo": "https://mithilakirtinaturals.com/logo.jpeg",
+    "description": "Premium supplier of authentic Mithila makhana (fox nuts) from Bihar, India. Farm-direct, naturally processed, export quality.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Darbhanga",
+      "addressRegion": "Bihar",
+      "addressCountry": "India"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "sales",
+      "telephone": "+917003186819",
+      "email": "mithilakirtinaturals@gmail.com"
+    },
+    "sameAs": [
+      "https://www.facebook.com/share/1Gaz8AYXUx/?mibextid=wwXIfr",
+      "https://www.instagram.com/mithilakirti/",
+      "https://www.linkedin.com/company/mithilakirti-naturals-private-limited/"
+    ]
+  }
   </script>
 
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mithilakirti Naturals | Premium Raw Makhana from Mithila, Bihar</title>
+  <meta name="description" content="Buy premium raw Makhana (Fox Nuts) sourced directly from the fertile Mithila region of Bihar. 100% natural, farm-to-table, export quality. Order via WhatsApp.">
+  <meta name="keywords" content="premium makhana, raw fox nuts, Mithila makhana, Bihar makhana, export quality makhana, organic fox nuts, farm direct makhana">
+  <meta name="author" content="Mithilakirti Naturals Private Limited">
+  <meta property="og:title" content="Mithilakirti Naturals | Premium Raw Makhana">
+  <meta property="og:description" content="Premium Quality Raw Makhana from the Heart of Bihar. Farm-direct, pure & crunchy.">
+  <meta property="og:image" content="https://mithilakirtinaturals.com/logo.jpeg">
+  <meta property="og:url" content="https://mithilakirtinaturals.com">
+  <meta name="twitter:card" content="summary_large_image">
 
-  <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0"
-  >
-
-  <title>Mithilakirti Naturals | Premium Raw Makhana</title>
-
-  <link rel="icon" type="image/jpeg" href="https://mithilakirtinaturals.com/logo.jpeg">
-
+  <link rel="icon" type="image/jpeg" href="logo.jpeg">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 
-  <link
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-          rel="stylesheet"
-  >
-
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-gradient {
+      background: linear-gradient(135deg, #EDE7DD 0%, #F5F0E8 50%, #E8DFD0 100%);
+    }
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(45, 90, 39, 0.12);
+    }
+    .benefit-card {
+      transition: all 0.3s ease;
+    }
+    .benefit-card:hover {
+      transform: translateY(-4px);
+      background: rgba(255,255,255,0.15);
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+    }
+    .faq-item.active .faq-answer {
+      max-height: 300px;
+    }
+    .faq-item.active .faq-icon {
+      transform: rotate(180deg);
+    }
+  </style>
 </head>
 
+<body class="bg-[#F9F5F0] text-gray-800 font-sans antialiased">
 
-<body class="bg-[#F9F5F0] text-gray-800 font-sans">
-
-
-<!-- ================= HEADER ================= -->
-
-<header class="bg-white shadow-md sticky top-0 z-50">
-
-  <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-
-    <!-- LOGO -->
-
-    <div class="flex items-center space-x-3">
-
-      <img
-              src="https://mithilakirtinaturals.com/logo.jpeg"
-              alt="Mithilakirti Naturals Logo"
-              class="h-10 w-auto"
-      >
-
-      <div class="text-2xl font-bold text-[#2D5A27]">
-
-        Mithilakirti
-        <span class="text-[#8B4513]">
-            Naturals
-          </span>
-
-      </div>
-
-    </div>
-
-
-    <!-- DESKTOP MENU -->
-
-    <ul class="hidden md:flex space-x-8 font-medium">
-
-      <li>
-        <a
-                href="#home"
-                class="hover:text-[#2D5A27]"
-        >
-          Home
-        </a>
-      </li>
-
-      <li>
-        <a
-                href="#about"
-                class="hover:text-[#2D5A27]"
-        >
-          About
-        </a>
-      </li>
-
-      <li>
-        <a
-                href="#products"
-                class="hover:text-[#2D5A27]"
-        >
-          Products
-        </a>
-      </li>
-
-      <li>
-        <a
-                href="#benefits"
-                class="hover:text-[#2D5A27]"
-        >
-          Benefits
-        </a>
-      </li>
-
-      <li>
-        <a
-                href="#contact"
-                class="hover:text-[#2D5A27]"
-        >
-          Contact
-        </a>
-      </li>
-
-    </ul>
-
-
-    <!-- MOBILE MENU BUTTON -->
-
-    <button
-            id="menu-btn"
-            class="md:hidden text-2xl text-[#2D5A27]"
-            aria-label="Open Menu"
-    >
-
-      <i class="fas fa-bars"></i>
-
-    </button>
-
-  </nav>
-
-
-  <!-- MOBILE MENU -->
-
-  <div
-          id="mobile-menu"
-          class="hidden md:hidden px-6 pb-4"
-  >
-
-    <ul class="space-y-4 font-medium">
-
-      <li>
-        <a href="#home" class="block">
-          Home
-        </a>
-      </li>
-
-      <li>
-        <a href="#about" class="block">
-          About
-        </a>
-      </li>
-
-      <li>
-        <a href="#products" class="block">
-          Products
-        </a>
-      </li>
-
-      <li>
-        <a href="#benefits" class="block">
-          Benefits
-        </a>
-      </li>
-
-      <li>
-        <a href="#contact" class="block">
-          Contact
-        </a>
-      </li>
-
-    </ul>
-
-  </div>
-
-</header>
-
-
-
-<!-- ================= HERO ================= -->
-
-<section
-        id="home"
-        class="min-h-[60vh] flex items-center justify-center bg-[#EDE7DD]"
->
-
-  <div class="text-center px-4 max-w-4xl mx-auto">
-
-    <h1 class="text-5xl md:text-6xl font-bold text-[#2D5A27] mb-4">
-
-      Nature's Finest Crunch
-
-    </h1>
-
-
-    <p class="text-xl text-gray-700 mb-8">
-
-      Premium Quality Raw Makhana from the Heart of Bihar
-
-    </p>
-
-
-    <!-- HERO BUTTONS -->
-
-    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-
-      <!-- EXPLORE PRODUCTS -->
-
-      <a
-              href="#products"
-              class="bg-[#2D5A27] hover:bg-[#1e3d1a] text-white px-8 py-3 rounded-full font-semibold transition"
-      >
-
-        Explore Our Range
-
+  <!-- ================= HEADER ================= -->
+  <header class="bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50">
+    <nav class="container mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
+      <!-- LOGO -->
+      <a href="#home" class="flex items-center space-x-3 group">
+        <img src="logo.jpeg" alt="Mithilakirti Naturals Logo" class="h-11 w-auto rounded-full shadow-sm group-hover:scale-105 transition">
+        <div class="text-xl sm:text-2xl font-bold text-[#2D5A27]">
+          Mithilakirti
+          <span class="text-[#8B4513]">Naturals</span>
+        </div>
       </a>
 
+      <!-- DESKTOP MENU -->
+      <ul class="hidden md:flex items-center space-x-7 font-medium text-gray-700">
+        <li><a href="#home" class="hover:text-[#2D5A27] transition">Home</a></li>
+        <li><a href="#about" class="hover:text-[#2D5A27] transition">About</a></li>
+        <li><a href="#products" class="hover:text-[#2D5A27] transition">Products</a></li>
+        <li><a href="#why-us" class="hover:text-[#2D5A27] transition">Why Us</a></li>
+        <li><a href="#benefits" class="hover:text-[#2D5A27] transition">Benefits</a></li>
+        <li><a href="#faq" class="hover:text-[#2D5A27] transition">FAQ</a></li>
+        <li><a href="#contact" class="hover:text-[#2D5A27] transition">Contact</a></li>
+        <li>
+          <a href="https://wa.me/917003186819?text=Hello%20Mithilakirti%20Naturals%2C%20I%20would%20like%20to%20place%20an%20order."
+             target="_blank" rel="noopener noreferrer"
+             class="bg-[#25D366] hover:bg-[#1ebe5d] text-white px-4 py-2 rounded-full text-sm font-semibold transition flex items-center gap-1.5">
+            <i class="fab fa-whatsapp"></i> Order Now
+          </a>
+        </li>
+      </ul>
 
-      <!-- ORDER ON WHATSAPP -->
+      <!-- MOBILE MENU BUTTON -->
+      <button id="menu-btn" class="md:hidden text-2xl text-[#2D5A27] p-2" aria-label="Open Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
 
-      <a
-              href="https://wa.me/917003186819?text=Hello%20Mithilakirti%20Naturals%2C%20I%20would%20like%20to%20place%20an%20order."
-              target="_blank"
-              rel="noopener noreferrer"
-              class="bg-[#25D366] hover:bg-[#1ebe5d] text-white px-8 py-3 rounded-full font-semibold transition flex items-center justify-center gap-2"
-      >
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-6 py-4 shadow-lg">
+      <ul class="space-y-4 font-medium">
+        <li><a href="#home" class="block py-1">Home</a></li>
+        <li><a href="#about" class="block py-1">About</a></li>
+        <li><a href="#products" class="block py-1">Products</a></li>
+        <li><a href="#why-us" class="block py-1">Why Us</a></li>
+        <li><a href="#benefits" class="block py-1">Benefits</a></li>
+        <li><a href="#faq" class="block py-1">FAQ</a></li>
+        <li><a href="#contact" class="block py-1">Contact</a></li>
+        <li class="pt-2">
+          <a href="https://wa.me/917003186819?text=Hello%20Mithilakirti%20Naturals%2C%20I%20would%20like%20to%20place%20an%20order."
+             target="_blank" rel="noopener noreferrer"
+             class="inline-flex items-center gap-2 bg-[#25D366] text-white px-5 py-2.5 rounded-full font-semibold">
+            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
 
-        <i class="fab fa-whatsapp text-xl"></i>
-
-        Order on WhatsApp
-
-      </a>
-
+  <!-- ================= HERO ================= -->
+  <section id="home" class="hero-gradient min-h-[75vh] flex items-center relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10 pointer-events-none">
+      <div class="absolute top-20 left-10 w-72 h-72 bg-[#2D5A27] rounded-full blur-3xl"></div>
+      <div class="absolute bottom-10 right-10 w-96 h-96 bg-[#8B4513] rounded-full blur-3xl"></div>
     </div>
 
-  </div>
+    <div class="container mx-auto px-4 sm:px-6 py-16 relative z-10">
+      <div class="max-w-3xl mx-auto text-center">
+        <div class="inline-flex items-center gap-2 bg-white/70 backdrop-blur-sm text-[#2D5A27] text-sm font-semibold px-4 py-1.5 rounded-full mb-6 shadow-sm">
+          <i class="fas fa-seedling"></i>
+          Farm-Direct from Mithila, Bihar
+        </div>
 
-</section>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#2D5A27] mb-5 leading-tight">
+          Nature's Finest<br class="hidden sm:block"> Crunch
+        </h1>
 
-
-
-<!-- ================= ABOUT ================= -->
-
-<section
-        id="about"
-        class="py-20 container mx-auto px-6"
->
-
-  <h2 class="text-3xl font-bold text-center mb-12 text-[#2D5A27]">
-
-    About Mithilakirti Naturals
-
-  </h2>
-
-
-  <div
-          class="max-w-4xl mx-auto text-lg text-gray-700 leading-relaxed text-center"
-  >
-
-    <p class="mb-6">
-
-      Mithilakirti Naturals Private Limited is a premium supplier of
-      high-quality Makhana (Fox Nuts) sourced directly from the fertile
-      Mithila region of Bihar, India — the global heartland of authentic
-      makhana cultivation.
-
-    </p>
-
-
-    <p class="mb-6">
-
-      We work closely with local farmers to ensure that every batch of
-      makhana is carefully harvested, naturally dried, and processed while
-      maintaining its purity, crunch, and nutritional value.
-
-    </p>
-
-
-    <p class="mb-6">
-
-      Our mission is to bring the authentic taste and health benefits of
-      Mithila makhana to customers across India and international markets
-      while supporting sustainable agriculture and local farming communities.
-
-    </p>
-
-
-    <p>
-
-      At Mithilakirti Naturals, we believe in purity, quality, and trust —
-      delivering nature's finest superfood directly from farm to table.
-
-    </p>
-
-  </div>
-
-</section>
-
-
-
-<!-- ================= PRODUCTS ================= -->
-
-<section
-        id="products"
-        class="py-20 container mx-auto px-6"
->
-
-  <h2 class="text-3xl font-bold text-center mb-12 text-[#2D5A27]">
-
-    Our Premium Selection
-
-  </h2>
-
-
-  <div class="grid md:grid-cols-3 gap-10">
-
-
-    <!-- PRODUCT 1 -->
-
-    <div
-            class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition"
-    >
-
-      <img
-              src="https://mithilakirtinaturals.com/MakhanMixFinal.jpeg"
-              alt="Mixed Makhana"
-              class="w-full h-60 object-cover"
-      >
-
-
-      <div class="p-6">
-
-        <h3 class="text-xl font-bold mb-2">
-
-          Mixed Makhana
-
-        </h3>
-
-
-        <p class="text-gray-600 mb-4">
-
-          Large handpicked foxnuts ideal for roasting and premium snacking.
-
+        <p class="text-lg sm:text-xl text-gray-700 mb-3 max-w-2xl mx-auto">
+          Premium Quality Raw Makhana (Fox Nuts) sourced directly from the fertile wetlands of Mithila — the global heartland of authentic makhana.
+        </p>
+        <p class="text-base text-gray-600 mb-10">
+          Naturally dried • Handpicked • Export Grade • 100% Pure
         </p>
 
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <a href="#products"
+             class="w-full sm:w-auto bg-[#2D5A27] hover:bg-[#1e3d1a] text-white px-8 py-3.5 rounded-full font-semibold transition shadow-lg hover:shadow-xl flex items-center justify-center gap-2">
+            <i class="fas fa-box-open"></i> Explore Our Range
+          </a>
+          <a href="https://wa.me/917003186819?text=Hello%20Mithilakirti%20Naturals%2C%20I%20would%20like%20to%20place%20an%20order."
+             target="_blank" rel="noopener noreferrer"
+             class="w-full sm:w-auto bg-[#25D366] hover:bg-[#1ebe5d] text-white px-8 py-3.5 rounded-full font-semibold transition shadow-lg hover:shadow-xl flex items-center justify-center gap-2">
+            <i class="fab fa-whatsapp text-xl"></i> Order on WhatsApp
+          </a>
+        </div>
 
-        <span class="text-sm font-semibold text-[#2D5A27]">
-
-            Sourced from Mithila Region
-
-          </span>
-
+        <!-- Trust strip -->
+        <div class="mt-14 flex flex-wrap justify-center gap-6 sm:gap-10 text-sm text-gray-600">
+          <div class="flex items-center gap-2">
+            <i class="fas fa-check-circle text-[#2D5A27]"></i>
+            <span>Direct from Farmers</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fas fa-check-circle text-[#2D5A27]"></i>
+            <span>Natural Processing</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fas fa-check-circle text-[#2D5A27]"></i>
+            <span>Export Quality</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fas fa-check-circle text-[#2D5A27]"></i>
+            <span>Pan-India & International</span>
+          </div>
+        </div>
       </div>
-
     </div>
+  </section>
 
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="py-20 bg-white">
+    <div class="container mx-auto px-4 sm:px-6">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+          <span class="text-[#8B4513] font-semibold text-sm tracking-wider uppercase">Our Story</span>
+          <h2 class="text-3xl sm:text-4xl font-bold text-[#2D5A27] mt-2">About Mithilakirti Naturals</h2>
+        </div>
 
+        <div class="prose prose-lg max-w-none text-gray-700 space-y-5 text-center sm:text-left">
+          <p>
+            <strong>Mithilakirti Naturals Private Limited</strong> is a premium supplier of high-quality Makhana (Fox Nuts) sourced directly from the fertile Mithila region of Bihar, India — the global heartland of authentic makhana cultivation.
+          </p>
+          <p>
+            We work closely with local farmers to ensure that every batch of makhana is carefully harvested, naturally dried, and processed while maintaining its purity, crunch, and nutritional value.
+          </p>
+          <p>
+            Our mission is to bring the authentic taste and health benefits of Mithila makhana to customers across India and international markets while supporting sustainable agriculture and local farming communities.
+          </p>
+          <p class="text-[#2D5A27] font-medium">
+            At Mithilakirti Naturals, we believe in purity, quality, and trust — delivering nature's finest superfood directly from farm to table.
+          </p>
+        </div>
 
-    <!-- PRODUCT 2 -->
-
-    <div
-            class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition"
-    >
-
-      <video
-              class="w-full h-60 object-cover"
-              autoplay
-              loop
-              muted
-              playsinline
-      >
-
-        <source
-                src="https://mithilakirtinaturals.com/5suta.mp4"
-                type="video/mp4"
-        >
-
-        Your browser does not support the video tag.
-
-      </video>
-
-
-      <div class="p-6">
-
-        <h3 class="text-xl font-bold mb-2">
-
-          Classic Raw Makhana
-
-        </h3>
-
-
-        <p class="text-gray-600 mb-4">
-
-          Naturally dried lotus seeds packed with nutrition and purity.
-
-        </p>
-
-
-        <span class="text-sm font-semibold text-[#2D5A27]">
-
-            100% Natural & Organic
-
-          </span>
-
+        <!-- Key pillars -->
+        <div class="grid sm:grid-cols-3 gap-6 mt-14">
+          <div class="bg-[#F9F5F0] rounded-2xl p-6 text-center">
+            <div class="w-14 h-14 bg-[#2D5A27]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-hands-helping text-2xl text-[#2D5A27]"></i>
+            </div>
+            <h3 class="font-bold text-lg mb-2">Farmer Partnership</h3>
+            <p class="text-gray-600 text-sm">Working hand-in-hand with Mithila farmers for fair practices and consistent quality.</p>
+          </div>
+          <div class="bg-[#F9F5F0] rounded-2xl p-6 text-center">
+            <div class="w-14 h-14 bg-[#2D5A27]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-leaf text-2xl text-[#2D5A27]"></i>
+            </div>
+            <h3 class="font-bold text-lg mb-2">Natural Process</h3>
+            <p class="text-gray-600 text-sm">Carefully harvested and naturally dried — no artificial additives or chemical processing.</p>
+          </div>
+          <div class="bg-[#F9F5F0] rounded-2xl p-6 text-center">
+            <div class="w-14 h-14 bg-[#2D5A27]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-globe-asia text-2xl text-[#2D5A27]"></i>
+            </div>
+            <h3 class="font-bold text-lg mb-2">Export Ready</h3>
+            <p class="text-gray-600 text-sm">Premium grades suitable for domestic markets and international buyers.</p>
+          </div>
+        </div>
       </div>
-
     </div>
+  </section>
 
-
-
-    <!-- PRODUCT 3 -->
-
-    <div
-            class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition"
-    >
-
-      <video
-              class="w-full h-60 object-cover"
-              autoplay
-              loop
-              muted
-              playsinline
-      >
-
-        <source
-                src="https://mithilakirtinaturals.com/6+SutaMakhana.mp4"
-                type="video/mp4"
-        >
-
-        Your browser does not support the video tag.
-
-      </video>
-
-
-      <div class="p-6">
-
-        <h3 class="text-xl font-bold mb-2">
-
-          Export Quality Makhana
-
-        </h3>
-
-
-        <p class="text-gray-600 mb-4">
-
-          Carefully processed foxnuts suitable for international markets.
-
-        </p>
-
-
-        <span class="text-sm font-semibold text-[#2D5A27]">
-
-            Premium Export Grade
-
-          </span>
-
+  <!-- ================= PRODUCTS ================= -->
+  <section id="products" class="py-20 bg-[#F9F5F0]">
+    <div class="container mx-auto px-4 sm:px-6">
+      <div class="text-center mb-14">
+        <span class="text-[#8B4513] font-semibold text-sm tracking-wider uppercase">Our Range</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-[#2D5A27] mt-2">Premium Selection</h2>
+        <p class="text-gray-600 mt-3 max-w-xl mx-auto">Handpicked grades of authentic Mithila makhana for snacking, roasting, and export.</p>
       </div>
 
-    </div>
+      <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
 
+        <!-- PRODUCT 1 -->
+        <div class="product-card bg-white rounded-2xl shadow-md overflow-hidden transition duration-300">
+          <div class="relative h-56 overflow-hidden bg-gray-100">
+            <img src="MakhanMixFinal.jpeg" alt="Mixed Makhana - Large handpicked foxnuts"
+                 class="w-full h-full object-cover hover:scale-105 transition duration-500">
+            <span class="absolute top-3 left-3 bg-[#2D5A27] text-white text-xs font-semibold px-3 py-1 rounded-full">
+              Popular
+            </span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Mixed Makhana</h3>
+            <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+              Large handpicked foxnuts ideal for roasting and premium snacking. Consistent size and superior crunch.
+            </p>
+            <div class="flex items-center justify-between mb-5">
+              <span class="text-sm font-semibold text-[#2D5A27] bg-[#2D5A27]/10 px-3 py-1 rounded-full">
+                Sourced from Mithila
+              </span>
+            </div>
+            <a href="https://wa.me/917003186819?text=Hello%20Mithilakirti%20Naturals%2C%20I%20am%20interested%20in%20Mixed%20Makhana."
+               target="_blank" rel="noopener noreferrer"
+               class="w-full inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1ebe5d] text-white py-2.5 rounded-xl font-semibold transition text-sm">
+              <i class="fab fa-whatsapp"></i> Enquire / Order
+            </a>
+          </div>
+        </div>
 
-  </div>
+        <!-- PRODUCT 2 -->
+        <div class="product-card bg-white rounded-2xl shadow-md overflow-hidden transition duration-300">
+          <div class="relative h-56 overflow-hidden bg-gray-100">
+            <video class="w-full h-full object-cover" autoplay loop muted playsinline>
+              <source src="https://mithilakirtinaturals.com/5suta.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <span class="absolute top-3 left-3 bg-[#8B4513] text-white text-xs font-semibold px-3 py-1 rounded-full">
+              Classic
+            </span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Classic Raw Makhana</h3>
+            <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+              Naturally dried lotus seeds packed with nutrition and purity. Perfect for everyday healthy snacking.
+            </p>
+            <div class="flex items-center justify-between mb-5">
+              <span class="text-sm font-semibold text-[#2D5A27] bg-[#2D5A27]/10 px-3 py-1 rounded-full">
+                100% Natural
+              </span>
+            </div>
+            <a href="https://wa.me/917003186819?text=Hello%20Mithilakirti%20Naturals%2C%20I%20am%20interested%20in%20Classic%20Raw%20Makhana."
+               target="_blank" rel="noopener noreferrer"
+               class="w-full inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1ebe5d] text-white py-2.5 rounded-xl font-semibold transition text-sm">
+              <i class="fab fa-whatsapp"></i> Enquire / Order
+            </a>
+          </div>
+        </div>
 
-</section>
-
-
-
-<!-- ================= BENEFITS ================= -->
-
-<section
-        id="benefits"
-        class="py-20 bg-[#2D5A27] text-white"
->
-
-  <div class="container mx-auto px-6">
-
-    <h2 class="text-3xl font-bold text-center mb-12">
-
-      The Power of Foxnuts
-
-    </h2>
-
-
-    <div class="grid md:grid-cols-4 gap-8 text-center">
-
-
-      <div>
-
-        <i class="fas fa-heartbeat text-4xl mb-4"></i>
-
-        <p>
-          Heart Healthy
-        </p>
-
+        <!-- PRODUCT 3 -->
+        <div class="product-card bg-white rounded-2xl shadow-md overflow-hidden transition duration-300">
+          <div class="relative h-56 overflow-hidden bg-gray-100">
+            <video class="w-full h-full object-cover" autoplay loop muted playsinline>
+              <source src="https://mithilakirtinaturals.com/6+SutaMakhana.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <span class="absolute top-3 left-3 bg-amber-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+              Export Grade
+            </span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Export Quality Makhana</h3>
+            <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+              Carefully processed and graded foxnuts suitable for international markets and bulk buyers.
+            </p>
+            <div class="flex items-center justify-between mb-5">
+              <span class="text-sm font-semibold text-[#2D5A27] bg-[#2D5A27]/10 px-3 py-1 rounded-full">
+                Premium Export
+              </span>
+            </div>
+            <a href="https://wa.me/917003186819?text=Hello%20Mithilakirti%20Naturals%2C%20I%20am%20interested%20in%20Export%20Quality%20Makhana.%20Please%20share%20details%20and%20pricing."
+               target="_blank" rel="noopener noreferrer"
+               class="w-full inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1ebe5d] text-white py-2.5 rounded-xl font-semibold transition text-sm">
+              <i class="fab fa-whatsapp"></i> Enquire / Order
+            </a>
+          </div>
+        </div>
       </div>
 
-
-      <div>
-
-        <i class="fas fa-feather-alt text-4xl mb-4"></i>
-
-        <p>
-          Low Calorie
-        </p>
-
-      </div>
-
-
-      <div>
-
-        <i class="fas fa-bolt text-4xl mb-4"></i>
-
-        <p>
-          High Protein
-        </p>
-
-      </div>
-
-
-      <div>
-
-        <i class="fas fa-leaf text-4xl mb-4"></i>
-
-        <p>
-          Gluten Free
-        </p>
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- ================= CONTACT ================= -->
-
-<section
-        id="contact"
-        class="py-20 bg-[#EDE7DD]"
->
-
-  <div class="container mx-auto px-6 text-center">
-
-
-    <h2 class="text-3xl font-bold mb-10 text-[#2D5A27]">
-
-      Contact Us
-
-    </h2>
-
-
-    <div class="space-y-6 text-lg text-gray-700">
-
-
-      <p>
-
-        <i class="fas fa-building text-[#2D5A27] mr-2"></i>
-
-        Mithilakirti Naturals Private Limited
-
-      </p>
-
-
-      <p>
-
-        <i class="fas fa-map-marker-alt text-[#2D5A27] mr-2"></i>
-
-        Darbhanga, Bihar, India
-
-      </p>
-
-
-      <p>
-
-        <i class="fas fa-phone text-[#2D5A27] mr-2"></i>
-
-        <a
-                href="tel:+917003186819"
-                class="text-[#2D5A27] hover:underline"
-        >
-
-          +91 7003186819
-
+      <div class="text-center mt-12">
+        <p class="text-gray-600 mb-4">Looking for bulk or custom packaging?</p>
+        <a href="https://wa.me/917003186819?text=Hello%20Mithilakirti%20Naturals%2C%20I%20would%20like%20to%20discuss%20bulk%20%2F%20export%20orders."
+           target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 text-[#2D5A27] font-semibold hover:underline">
+          <i class="fas fa-comments"></i> Talk to us about bulk & export orders →
         </a>
+      </div>
+    </div>
+  </section>
 
-      </p>
-
-
-      <p>
-
-        <i class="fas fa-envelope text-[#2D5A27] mr-2"></i>
-
-        <a
-                href="mailto:mithilakirtinaturals@gmail.com"
-                class="text-[#2D5A27] hover:underline"
-        >
-
-          mithilakirtinaturals@gmail.com
-
-        </a>
-
-      </p>
-
-
-      <!-- CONTACT WHATSAPP BUTTON -->
-
-      <div class="pt-4">
-
-        <a
-                href="https://wa.me/917003186819?text=Hello%20Mithilakirti%20Naturals%2C%20I%20am%20interested%20in%20your%20Makhana."
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1ebe5d] text-white px-8 py-3 rounded-full font-semibold transition"
-        >
-
-          <i class="fab fa-whatsapp text-xl"></i>
-
-          Chat on WhatsApp
-
-        </a>
-
+  <!-- ================= WHY US ================= -->
+  <section id="why-us" class="py-20 bg-white">
+    <div class="container mx-auto px-4 sm:px-6">
+      <div class="text-center mb-14">
+        <span class="text-[#8B4513] font-semibold text-sm tracking-wider uppercase">Why Choose Us</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-[#2D5A27] mt-2">From Pond to Packet</h2>
+        <p class="text-gray-600 mt-3 max-w-xl mx-auto">What makes Mithilakirti Makhana different.</p>
       </div>
 
-
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        <div class="border border-gray-100 rounded-2xl p-6 hover:border-[#2D5A27]/30 hover:shadow-md transition">
+          <div class="text-3xl font-bold text-[#2D5A27]/20 mb-3">01</div>
+          <h3 class="font-bold text-lg mb-2">Authentic Origin</h3>
+          <p class="text-gray-600 text-sm">Sourced exclusively from the traditional wetlands of Mithila (Darbhanga & surrounding areas), known for the finest quality makhana.</p>
+        </div>
+        <div class="border border-gray-100 rounded-2xl p-6 hover:border-[#2D5A27]/30 hover:shadow-md transition">
+          <div class="text-3xl font-bold text-[#2D5A27]/20 mb-3">02</div>
+          <h3 class="font-bold text-lg mb-2">Careful Harvesting</h3>
+          <p class="text-gray-600 text-sm">Hand-harvested and sorted with care so only the best seeds make it to your table.</p>
+        </div>
+        <div class="border border-gray-100 rounded-2xl p-6 hover:border-[#2D5A27]/30 hover:shadow-md transition">
+          <div class="text-3xl font-bold text-[#2D5A27]/20 mb-3">03</div>
+          <h3 class="font-bold text-lg mb-2">Natural Drying</h3>
+          <p class="text-gray-600 text-sm">Sun-dried and processed using traditional methods that preserve crunch, flavour and nutrition.</p>
+        </div>
+        <div class="border border-gray-100 rounded-2xl p-6 hover:border-[#2D5A27]/30 hover:shadow-md transition">
+          <div class="text-3xl font-bold text-[#2D5A27]/20 mb-3">04</div>
+          <h3 class="font-bold text-lg mb-2">Quality Promise</h3>
+          <p class="text-gray-600 text-sm">Every batch is checked for purity, size consistency and freshness before packing.</p>
+        </div>
+      </div>
     </div>
+  </section>
 
-  </div>
+  <!-- ================= BENEFITS ================= -->
+  <section id="benefits" class="py-20 bg-[#2D5A27] text-white">
+    <div class="container mx-auto px-4 sm:px-6">
+      <div class="text-center mb-14">
+        <span class="text-green-200 font-semibold text-sm tracking-wider uppercase">Superfood Benefits</span>
+        <h2 class="text-3xl sm:text-4xl font-bold mt-2">The Power of Foxnuts</h2>
+        <p class="text-green-100 mt-3 max-w-xl mx-auto">A nutrient-dense, guilt-free snack loved across generations.</p>
+      </div>
 
-</section>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+        <div class="benefit-card rounded-2xl p-6 text-center border border-white/10">
+          <div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-heartbeat text-3xl"></i>
+          </div>
+          <h3 class="font-bold text-lg mb-1">Heart Healthy</h3>
+          <p class="text-green-100 text-sm">Low in sodium and rich in magnesium — supports healthy blood pressure and heart function.</p>
+        </div>
+        <div class="benefit-card rounded-2xl p-6 text-center border border-white/10">
+          <div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-feather-alt text-3xl"></i>
+          </div>
+          <h3 class="font-bold text-lg mb-1">Low Calorie</h3>
+          <p class="text-green-100 text-sm">Light and satisfying. Ideal for mindful snacking without the calorie load of fried snacks.</p>
+        </div>
+        <div class="benefit-card rounded-2xl p-6 text-center border border-white/10">
+          <div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-bolt text-3xl"></i>
+          </div>
+          <h3 class="font-bold text-lg mb-1">High Protein</h3>
+          <p class="text-green-100 text-sm">A plant-based protein source that keeps you fuller for longer and supports active lifestyles.</p>
+        </div>
+        <div class="benefit-card rounded-2xl p-6 text-center border border-white/10">
+          <div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-leaf text-3xl"></i>
+          </div>
+          <h3 class="font-bold text-lg mb-1">Gluten Free</h3>
+          <p class="text-green-100 text-sm">Naturally gluten-free and easy to digest — suitable for fasting and special diets.</p>
+        </div>
+      </div>
 
+      <!-- Quick usage tips -->
+      <div class="mt-16 max-w-3xl mx-auto bg-white/10 rounded-2xl p-6 sm:p-8">
+        <h3 class="font-bold text-xl mb-4 text-center">How to Enjoy</h3>
+        <div class="grid sm:grid-cols-3 gap-4 text-sm text-center">
+          <div>
+            <i class="fas fa-fire text-2xl mb-2 text-amber-200"></i>
+            <p class="font-medium">Lightly roast with ghee & spices for a classic snack</p>
+          </div>
+          <div>
+            <i class="fas fa-bowl-food text-2xl mb-2 text-amber-200"></i>
+            <p class="font-medium">Add to kheer, porridge or trail mix</p>
+          </div>
+          <div>
+            <i class="fas fa-mug-hot text-2xl mb-2 text-amber-200"></i>
+            <p class="font-medium">Enjoy plain as a crunchy tea-time bite</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- ================= FAQ ================= -->
+  <section id="faq" class="py-20 bg-[#F9F5F0]">
+    <div class="container mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <span class="text-[#8B4513] font-semibold text-sm tracking-wider uppercase">Questions</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-[#2D5A27] mt-2">Frequently Asked</h2>
+      </div>
 
-<!-- ================= FOOTER ================= -->
+      <div class="max-w-2xl mx-auto space-y-3" id="faq-list">
+        <div class="faq-item bg-white rounded-xl shadow-sm overflow-hidden">
+          <button class="faq-question w-full flex items-center justify-between px-5 py-4 text-left font-semibold text-gray-800 hover:bg-gray-50 transition">
+            <span>What is the difference between your grades?</span>
+            <i class="fas fa-chevron-down faq-icon text-[#2D5A27] transition-transform"></i>
+          </button>
+          <div class="faq-answer px-5 text-gray-600 text-sm">
+            <p class="pb-4">Mixed Makhana offers larger, handpicked pieces ideal for roasting. Classic Raw is our everyday natural grade. Export Quality is carefully graded and processed for international standards and bulk buyers.</p>
+          </div>
+        </div>
 
-<footer class="bg-gray-900 text-white py-10 text-center">
+        <div class="faq-item bg-white rounded-xl shadow-sm overflow-hidden">
+          <button class="faq-question w-full flex items-center justify-between px-5 py-4 text-left font-semibold text-gray-800 hover:bg-gray-50 transition">
+            <span>Do you supply in bulk or for export?</span>
+            <i class="fas fa-chevron-down faq-icon text-[#2D5A27] transition-transform"></i>
+          </button>
+          <div class="faq-answer px-5 text-gray-600 text-sm">
+            <p class="pb-4">Yes. We actively supply bulk quantities and export-grade makhana. Message us on WhatsApp with your requirements (quantity, destination, packaging preference) and we will respond promptly.</p>
+          </div>
+        </div>
 
+        <div class="faq-item bg-white rounded-xl shadow-sm overflow-hidden">
+          <button class="faq-question w-full flex items-center justify-between px-5 py-4 text-left font-semibold text-gray-800 hover:bg-gray-50 transition">
+            <span>How should I store makhana?</span>
+            <i class="fas fa-chevron-down faq-icon text-[#2D5A27] transition-transform"></i>
+          </button>
+          <div class="faq-answer px-5 text-gray-600 text-sm">
+            <p class="pb-4">Keep in an airtight container in a cool, dry place away from moisture and direct sunlight. Properly stored, it retains its crunch for months.</p>
+          </div>
+        </div>
 
-  <div class="flex justify-center space-x-6 mb-6 text-xl">
+        <div class="faq-item bg-white rounded-xl shadow-sm overflow-hidden">
+          <button class="faq-question w-full flex items-center justify-between px-5 py-4 text-left font-semibold text-gray-800 hover:bg-gray-50 transition">
+            <span>Is your makhana organic / chemical-free?</span>
+            <i class="fas fa-chevron-down faq-icon text-[#2D5A27] transition-transform"></i>
+          </button>
+          <div class="faq-answer px-5 text-gray-600 text-sm">
+            <p class="pb-4">Our makhana is naturally harvested and dried without artificial additives or chemical processing. We focus on purity and traditional methods.</p>
+          </div>
+        </div>
 
+        <div class="faq-item bg-white rounded-xl shadow-sm overflow-hidden">
+          <button class="faq-question w-full flex items-center justify-between px-5 py-4 text-left font-semibold text-gray-800 hover:bg-gray-50 transition">
+            <span>How can I place an order?</span>
+            <i class="fas fa-chevron-down faq-icon text-[#2D5A27] transition-transform"></i>
+          </button>
+          <div class="faq-answer px-5 text-gray-600 text-sm">
+            <p class="pb-4">The easiest way is WhatsApp. Click any “Order / Enquire” button on this site or message +91 7003186819. You can also call or email us. We will guide you on availability, pricing and shipping.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <a
-            href="https://www.facebook.com/share/1Gaz8AYXUx/?mibextid=wwXIfr"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Facebook"
-    >
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="container mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <span class="text-[#8B4513] font-semibold text-sm tracking-wider uppercase">Get in Touch</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-[#2D5A27] mt-2">Contact Us</h2>
+        <p class="text-gray-600 mt-3">We typically respond within a few hours on WhatsApp.</p>
+      </div>
 
-      <i class="fab fa-facebook"></i>
+      <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-10 items-start">
+        <!-- Contact info -->
+        <div class="space-y-6">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-[#2D5A27]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+              <i class="fas fa-building text-[#2D5A27]"></i>
+            </div>
+            <div>
+              <h3 class="font-semibold text-gray-900">Company</h3>
+              <p class="text-gray-600">Mithilakirti Naturals Private Limited</p>
+            </div>
+          </div>
 
-    </a>
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-[#2D5A27]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+              <i class="fas fa-map-marker-alt text-[#2D5A27]"></i>
+            </div>
+            <div>
+              <h3 class="font-semibold text-gray-900">Location</h3>
+              <p class="text-gray-600">Darbhanga, Bihar, India</p>
+            </div>
+          </div>
 
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-[#2D5A27]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+              <i class="fas fa-phone text-[#2D5A27]"></i>
+            </div>
+            <div>
+              <h3 class="font-semibold text-gray-900">Phone</h3>
+              <a href="tel:+917003186819" class="text-[#2D5A27] hover:underline">+91 7003186819</a>
+            </div>
+          </div>
 
-    <a
-            href="https://www.instagram.com/mithilakirti/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram"
-    >
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-[#2D5A27]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+              <i class="fas fa-envelope text-[#2D5A27]"></i>
+            </div>
+            <div>
+              <h3 class="font-semibold text-gray-900">Email</h3>
+              <a href="mailto:mithilakirtinaturals@gmail.com" class="text-[#2D5A27] hover:underline">mithilakirtinaturals@gmail.com</a>
+            </div>
+          </div>
+        </div>
 
-      <i class="fab fa-instagram"></i>
+        <!-- CTA card -->
+        <div class="bg-[#F9F5F0] rounded-2xl p-8 shadow-sm border border-gray-100">
+          <h3 class="text-xl font-bold text-[#2D5A27] mb-3">Ready to order?</h3>
+          <p class="text-gray-600 text-sm mb-6">
+            Tell us what you need — quantity, grade, destination — and we’ll get back to you quickly with availability and pricing.
+          </p>
+          <a href="https://wa.me/917003186819?text=Hello%20Mithilakirti%20Naturals%2C%20I%20am%20interested%20in%20your%20Makhana.%20Please%20share%20details."
+             target="_blank" rel="noopener noreferrer"
+             class="w-full inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1ebe5d] text-white py-3.5 rounded-xl font-semibold transition mb-4">
+            <i class="fab fa-whatsapp text-xl"></i> Chat on WhatsApp
+          </a>
+          <a href="tel:+917003186819"
+             class="w-full inline-flex items-center justify-center gap-2 bg-[#2D5A27] hover:bg-[#1e3d1a] text-white py-3.5 rounded-xl font-semibold transition">
+            <i class="fas fa-phone"></i> Call Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    </a>
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-gray-900 text-white pt-14 pb-8">
+    <div class="container mx-auto px-4 sm:px-6">
+      <div class="grid md:grid-cols-3 gap-10 mb-10">
+        <div>
+          <div class="flex items-center space-x-3 mb-4">
+            <img src="logo.jpeg" alt="Logo" class="h-10 w-auto rounded-full">
+            <span class="text-xl font-bold">Mithilakirti <span class="text-amber-500">Naturals</span></span>
+          </div>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Premium raw Makhana from the heart of Mithila. Pure, crunchy, and farm-direct.
+          </p>
+        </div>
 
+        <div>
+          <h4 class="font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-gray-400 text-sm">
+            <li><a href="#about" class="hover:text-white transition">About</a></li>
+            <li><a href="#products" class="hover:text-white transition">Products</a></li>
+            <li><a href="#benefits" class="hover:text-white transition">Benefits</a></li>
+            <li><a href="#faq" class="hover:text-white transition">FAQ</a></li>
+            <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
 
-    <a
-            href="https://www.linkedin.com/company/mithilakirti-naturals-private-limited/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-    >
+        <div>
+          <h4 class="font-semibold mb-4">Connect</h4>
+          <div class="flex space-x-4 mb-4">
+            <a href="https://www.facebook.com/share/1Gaz8AYXUx/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"
+               class="w-10 h-10 bg-white/10 hover:bg-[#1877F2] rounded-full flex items-center justify-center transition" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/mithilakirti/" target="_blank" rel="noopener noreferrer"
+               class="w-10 h-10 bg-white/10 hover:bg-gradient-to-br hover:from-purple-500 hover:to-pink-500 rounded-full flex items-center justify-center transition" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/mithilakirti-naturals-private-limited/" target="_blank" rel="noopener noreferrer"
+               class="w-10 h-10 bg-white/10 hover:bg-[#0A66C2] rounded-full flex items-center justify-center transition" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://wa.me/917003186819" target="_blank" rel="noopener noreferrer"
+               class="w-10 h-10 bg-white/10 hover:bg-[#25D366] rounded-full flex items-center justify-center transition" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+          <p class="text-gray-400 text-sm">+91 7003186819</p>
+          <p class="text-gray-400 text-sm">mithilakirtinaturals@gmail.com</p>
+        </div>
+      </div>
 
-      <i class="fab fa-linkedin"></i>
+      <div class="border-t border-gray-800 pt-6 text-center text-gray-500 text-sm">
+        <p>© 2026 Mithilakirti Naturals Private Limited. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
 
-    </a>
+  <!-- ================= FLOATING WHATSAPP ================= -->
+  <a href="https://wa.me/917003186819?text=Hello%20Mithilakirti%20Naturals%2C%20I%20would%20like%20to%20know%20more%20about%20your%20Makhana."
+     target="_blank" rel="noopener noreferrer"
+     class="fixed bottom-6 right-6 bg-[#25D366] hover:bg-[#1ebe5d] text-white w-14 h-14 sm:w-16 sm:h-16 rounded-full shadow-lg flex items-center justify-center text-2xl sm:text-3xl z-50 transition hover:scale-110"
+     aria-label="Chat with us on WhatsApp" title="Chat with us on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
+  <!-- ================= SCRIPTS ================= -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Mobile menu
+      const btn = document.getElementById("menu-btn");
+      const menu = document.getElementById("mobile-menu");
+      const icon = btn.querySelector("i");
+      const links = document.querySelectorAll("#mobile-menu a");
 
-  </div>
-
-
-  <p>
-
-    © 2026 Mithilakirti Naturals Private Limited. All Rights Reserved.
-
-  </p>
-
-
-</footer>
-
-
-
-<!-- ================= FLOATING WHATSAPP BUTTON ================= -->
-
-<a
-        href="https://wa.me/917003186819?text=Hello%20Mithilakirti%20Naturals%2C%20I%20would%20like%20to%20know%20more%20about%20your%20Makhana."
-        target="_blank"
-        rel="noopener noreferrer"
-        class="fixed bottom-6 right-6 bg-[#25D366] hover:bg-[#1ebe5d] text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center text-3xl z-50 transition hover:scale-110"
-        aria-label="Chat with us on WhatsApp"
-        title="Chat with us on WhatsApp"
->
-
-  <i class="fab fa-whatsapp"></i>
-
-</a>
-
-
-
-<!-- ================= MOBILE MENU SCRIPT ================= -->
-
-<script>
-
-  document.addEventListener("DOMContentLoaded", function () {
-
-    const btn = document.getElementById("menu-btn");
-
-    const menu = document.getElementById("mobile-menu");
-
-    const icon = btn.querySelector("i");
-
-    const links = document.querySelectorAll("#mobile-menu a");
-
-
-    // Toggle mobile menu
-
-    btn.addEventListener("click", function (e) {
-
-      e.stopPropagation();
-
-      menu.classList.toggle("hidden");
-
-      icon.classList.toggle("fa-bars");
-
-      icon.classList.toggle("fa-times");
-
-    });
-
-
-    // Close menu after clicking a link
-
-    links.forEach(function (link) {
-
-      link.addEventListener("click", function () {
-
-        menu.classList.add("hidden");
-
-        icon.classList.remove("fa-times");
-
-        icon.classList.add("fa-bars");
-
+      btn.addEventListener("click", function (e) {
+        e.stopPropagation();
+        menu.classList.toggle("hidden");
+        icon.classList.toggle("fa-bars");
+        icon.classList.toggle("fa-times");
       });
 
+      links.forEach(function (link) {
+        link.addEventListener("click", function () {
+          menu.classList.add("hidden");
+          icon.classList.remove("fa-times");
+          icon.classList.add("fa-bars");
+        });
+      });
+
+      document.addEventListener("click", function (e) {
+        if (!menu.contains(e.target) && !btn.contains(e.target)) {
+          menu.classList.add("hidden");
+          icon.classList.remove("fa-times");
+          icon.classList.add("fa-bars");
+        }
+      });
+
+      // FAQ accordion
+      document.querySelectorAll(".faq-question").forEach(function (button) {
+        button.addEventListener("click", function () {
+          const item = this.parentElement;
+          const isActive = item.classList.contains("active");
+
+          // Close all
+          document.querySelectorAll(".faq-item").forEach(function (el) {
+            el.classList.remove("active");
+          });
+
+          // Open clicked if it was closed
+          if (!isActive) {
+            item.classList.add("active");
+          }
+        });
+      });
     });
-
-
-    // Close menu when clicking outside
-
-    document.addEventListener("click", function (e) {
-
-      if (
-        !menu.contains(e.target) &&
-        !btn.contains(e.target)
-      ) {
-
-        menu.classList.add("hidden");
-
-        icon.classList.remove("fa-times");
-
-        icon.classList.add("fa-bars");
-
-      }
-
-    });
-
-  });
-
-</script>
-
+  </script>
 
 </body>
-
 </html>
